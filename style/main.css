@@ -6,6 +6,7 @@ body {
 	background-size:15%;
 	background-position: -10px 50px;
 	background-color: #FFFFFF;
+	height: 100%;
 }
 
 .white-text-box {
@@ -17,4 +18,9 @@ body {
 .faded-white {
 	background-color: #FFFFFF;
 	opacity: 0.6;
+}
+
+.container {
+	min-height: 100%;
+	position: relative;
 }
