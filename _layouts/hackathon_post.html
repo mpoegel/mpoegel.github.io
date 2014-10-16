@@ -11,12 +11,24 @@
 
     </div>
     <div class="col-md-3 white-text-box sidebar">
-      {% include sidebar.html %}
+      <h3>{{ page.title }}</h3>
+      <dl class="dl-horizontal">
+        <dt>Start</dt>
+        <dd>{{ page.start_time }}</dd>
+        <dt>End</dt>
+        <dd>{{ page.end_time }}</dd>
+        <dt>Project Link</dt>
+        <dd><a href="/projects/{{ page.project_link }}">{{ page.project_name }}</a></dd>
+        <dt>Event Page</dt>
+        <dd><a href="{{ page.hackathon_link }}">{{ page.title }}</a></dd>
+        <dt>T-Shirt Count</dt>
+        <dd>{{ page.t_shirt_count }}</dd>
+      </dl>
     </div>
   </div>
 
   <div class="row">
-    <a href="#">
+    <a href="/hackathons">
       <button type="button" class="btn btn-link proj-btn">Return to Hackathons Page</button>
     </a>
   </div>
