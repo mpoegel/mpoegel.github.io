@@ -3,10 +3,10 @@ title: Hello World
 layout: default
 ---
 
-### Hello, World!
+## Hello, World!
 
-This is soon to be my project blog and portfolio. I do not currently have enough time to fill it with content, but I will hopefully be adding to it piece by piece over the next few weeks.
+This is my in progress hackathon blog and project portfolio. I record my experiences at [hackathons](/hackathons) I've attended (save Freshmen year). Why? I don't know, why not?
 
+Probably of more interest, I post about my favorite [side projects](/projects) that I have worked on over the years, mostly those that have started at hackathons. My goal is to keep the pages updated as progress is made on the projects. We'll see how it goes!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas dignissim nisi at blandit. Donec pretium sodales massa, nec iaculis est auctor quis. Duis placerat velit id ipsum dictum, sit amet scelerisque arcu imperdiet. Sed placerat est ac lorem consectetur tempor. Etiam finibus semper nisl non euismod. Nulla efficitur fringilla purus, a venenatis massa accumsan eu. Ut id congue tellus. Vestibulum at neque et arcu pharetra placerat. Praesent at dolor varius, aliquet enim in, faucibus metus. Sed scelerisque vehicula nisl, eu bibendum tellus condimentum vel. 
-
+Like what you see? I am always looking for more opportunities to increase my skills base. [Hire me!](/bio)

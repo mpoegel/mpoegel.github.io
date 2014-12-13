@@ -3,7 +3,7 @@ title: Hello World
 layout: projects
 ---
 
-### Hello, World!
+## Hello, World!
 
 This is my projects page.
 

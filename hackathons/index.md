@@ -3,7 +3,7 @@ title: Hello World
 layout: hackathons
 ---
 
-### Hello, World!
+## Hello, World!
 
 This is my hackathon blog.
 
