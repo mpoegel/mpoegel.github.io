@@ -7,6 +7,8 @@ layout: default
 
 My name is Matt Poegel. I am a sophomore at Rensselaer Polytechnic Institute in Troy, NY as a dual Mathematics and Computer Science major. My current interests are focused on data analysis. I enjoy the cross between the mathematics, computer algorithms, and problem solving. Having some experience in this area has peaked my interest and driven me to explore as much as I can in my own time, outside of classes.
 
+My contact information can be found on my [resume](/assets/resume.pdf).
+
 ### Work Experience
 
 #### Software Intern
@@ -46,14 +48,6 @@ Software:
   - Test Track Pro
   - Rational DOORS
 
-Languages/Frameworks with some experiences/I want to learn:
-
-  - Ruby and Rails
-  - Java
-  - PHP
-  - Mathmatica
-  - Python Web Framework (haven't decided which one yet)
-
 ### Other Activities
 
 #### Rensselaer Hackathon Organization
@@ -61,7 +55,7 @@ Languages/Frameworks with some experiences/I want to learn:
 I was one of the main organizers of [HackRPI 2014](/hack/HackRPI_2014)! This was RPI's very first hackathon and it was completely student organized. I look forward to helping again with HackRPI 2015.
 
 **Hacks out of Hat Chair**.
-I am the lead organizer for a smaller hackathon at RPI, Hacks out of Hat. At Hacks out of a Hat, hackers receive a random app idea from the [hat](/projects/hackathon_sorting_hat), which I build at [HackRU](/hack/HackRU_F2014). We aim to hold Hacks out of a Hat this spring 2015 and host 100-200 local hackers.
+I am the lead organizer for a smaller hackathon at RPI, Hacks out of Hat. At Hacks out of a Hat, hackers receive a random app idea from the [hat](/projects/hackathon_sorting_hat), which I built at [HackRU](/hack/HackRU_F2014). We aim to hold Hacks out of a Hat this spring in 2015 and host 100-200 local hackers.
 
 #### Computer Science Club
 **Member**. The CS club is a general computer science club that links together all of the computer science related clubs on campus. It also organizes outreach to the local community.

@@ -7,4 +7,4 @@ layout: projects
 
 This is my projects page.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas dignissim nisi at blandit. Donec pretium sodales massa, nec iaculis est auctor quis. Duis placerat velit id ipsum dictum, sit amet scelerisque arcu imperdiet. Sed placerat est ac lorem consectetur tempor. Etiam finibus semper nisl non euismod. Nulla efficitur fringilla purus, a venenatis massa accumsan eu. Ut id congue tellus. Vestibulum at neque et arcu pharetra placerat. Praesent at dolor varius, aliquet enim in, faucibus metus. Sed scelerisque vehicula nisl, eu bibendum tellus condimentum vel.
+This is a more detailed description of my projects than what can be found on my [github](http://github.com/mpoegel). I've highlighted my favorite projects, most of which have started as hackathon projects, and described the process, how they work, and what I learned. My goal is to keep the pages updated as I work on a project.

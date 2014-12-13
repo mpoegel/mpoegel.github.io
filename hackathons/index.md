@@ -7,4 +7,6 @@ layout: hackathons
 
 This is my hackathon blog.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas dignissim nisi at blandit. Donec pretium sodales massa, nec iaculis est auctor quis. Duis placerat velit id ipsum dictum, sit amet scelerisque arcu imperdiet. Sed placerat est ac lorem consectetur tempor. Etiam finibus semper nisl non euismod. Nulla efficitur fringilla purus, a venenatis massa accumsan eu. Ut id congue tellus. Vestibulum at neque et arcu pharetra placerat. Praesent at dolor varius, aliquet enim in, faucibus metus. Sed scelerisque vehicula nisl, eu bibendum tellus condimentum vel.
+Hackathons are awesome! Hackathons are 24-48 hour coding marathons where students get together, usually at another school, to create a project completed from start to finish within the allotted time period and compete for prizes. It's a great way to learn something, gain experience, have fun, and make connections. For more information, check out [Major League Hacking](http://mlh.io).
+
+The best hackathon, of course, is HackRPI. The first HackRPI was November 15-16, 2014 and is completed student organized. Support/sponsor [HackRPI](http://hackrpi.com) or the [Rensselaer Hackathon Organization](/). You can also [contact me](/assets/resume.pdf) directly to get involved.
