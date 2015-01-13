@@ -10,8 +10,24 @@
 			{{ content }}
 
 		</div>
-		<div class="col-md-3 white-text-box sidebar">
-			{% include sidebar.html %}
+		<div class="col-md-4 white-text-box sidebar">
+			<h3>{{ page.title }}</h3>
+			<dl class="dl-horizontal">
+				<dt>Hackathon</dt>
+					<dd>{{ page.hackathon }}</dd>
+				<dt>Hackathon Post</dt>
+					<dd><a href="/{{ page.hackathon_link }}">Blog</a></dd>
+				<dt>Repository</dt>
+					<dd><a href="http://github.com/mpoegel/{{ page.repo }}">{{ page.repo }}</a></dd>
+				<dt>Version</dt>
+					<dd>{{ page.version }}</dd>
+				<dt>Team</dt>
+					<dd>{{ page.team }}</dd>
+				<dt>Status</dt>
+					<dd>{{ page.status }}</dd>
+				<dt>Description</dt>
+					<dd>{{ page.description }}</dd>
+			</dl>
 		</div>
 	</div>
 
