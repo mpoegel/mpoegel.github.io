@@ -52,10 +52,10 @@ Software:
 
 #### Rensselaer Hackathon Organization
 **HackRPI Organizer**.
-I was one of the main organizers of [HackRPI 2014](/hack/HackRPI_2014)! This was RPI's very first hackathon and it was completely student organized. I look forward to helping again with HackRPI 2015.
+I was one of the main organizers of [HackRPI 2014](/hack/HackRPI_2014.html)! This was RPI's very first hackathon and it was completely student organized. I look forward to helping again with HackRPI 2015.
 
 **Hacks out of Hat Chair**.
-I am the lead organizer for a smaller hackathon at RPI, Hacks out of Hat. At Hacks out of a Hat, hackers receive a random app idea from the [hat](/projects/hackathon_sorting_hat), which I built at [HackRU](/hack/HackRU_F2014). We aim to hold Hacks out of a Hat this spring in 2015 and host 100-200 local hackers.
+I am the lead organizer for a smaller hackathon at RPI, Hacks out of Hat. At Hacks out of a Hat, hackers receive a random app idea from the [hat](/projects/hackathon_sorting_hat.html), which I built at [HackRU](/hack/HackRU_Fall2014.html). We aim to hold Hacks out of a Hat this spring in 2015 and host 100-200 local hackers.
 
 #### Computer Science Club
 **Member**. The CS club is a general computer science club that links together all of the computer science related clubs on campus. It also organizes outreach to the local community.
