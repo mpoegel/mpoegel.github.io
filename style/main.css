@@ -1,17 +1,16 @@
 body {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-image: url("/img/rho_onlyscrew.png");
-	background-repeat: no-repeat;
+	background: url("/img/rho_onlyscrew.png") no-repeat,
+							url("/img/escheresque.png");
 	background-size:15%;
 	background-position: -10px 50px;
-	background-color: #FFFFFF;
 	height: 100%;
 }
 
 .white-text-box {
-	background-color: #FFFFFF;
-	opacity: 1.0;
+	/*background-color: #FFFFFF;
+	opacity: 1.0;*/
 }
 
 .faded-white {
