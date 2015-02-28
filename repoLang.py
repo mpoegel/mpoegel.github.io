@@ -58,6 +58,7 @@ if (__name__ == '__main__'):
 
 
 	out_file = open('lang_stats.csv', 'w')
+	out_file.write('Language,Total\n')
 	for lang,total in language_totals.items():
 		out_file.write(lang + ',' + str(total) + '\n')
 

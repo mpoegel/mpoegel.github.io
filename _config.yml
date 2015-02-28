@@ -3,5 +3,5 @@ description: "personal portfolio and blog"
 
 url: "mpoegel.github.io"
 
-highlighter: null
+highlighter: pygments
 encoding: utf-8
