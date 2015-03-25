@@ -9,6 +9,25 @@
 
 			{{ content }}
 
+
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="btn btn-link">
+						<a href="{{ page.prevpost }}">Previous Post</a>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="btn btn-link">
+						<a href="/projects">Return to Projects Page</a>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="btn btn-link">
+						<a href="{{ page.nextpost }}">Next Post</a>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		<div class="col-md-4 white-text-box sidebar">
 			<h3>{{ page.title }}</h3>
@@ -29,11 +48,7 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<a href="/projects">
-			<button type="button" class="btn btn-link proj-btn">Return to Projects Page</button>
-		</a>
-	</div>
+
 
 </div>
 

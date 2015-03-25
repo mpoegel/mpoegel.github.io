@@ -7,28 +7,31 @@
 			{{ content }}
 
 
-			<h4>All Projects</h4>
-			<table class="table">
-				<thead>
-					<th>Project Name</th>
-					<th>Description</th>
-				</thead>
-				<tbody>
-					{% capture posts %}
-						{% for post in site.categories.project %}
-							|{{ post.title }}#{{ post.url }}#{{ post.description }}
-						{% endfor %}
-					{% endcapture %}
-					{% assign sortedposts = posts | split: '|' | sort %}
-					{% for post in sortedposts %}
-							{% assign postitems = post | split: '#' %}
-							<tr>
-								<td><a href="{{ postitems[1] }}">{{ postitems[0] }}</a></td>
-								<td>{{ postitems[2] }}</td>
-							</tr>
-					{% endfor %}
-				</tbody>
-			</table>
+			<h4>HackRPI Status Board</h4>
+			Status Board built for HackRPI to track event commits, show event announcements, and provide a mentoring system.
+			<ul class="posts">
+			{% for post in site.tags.hackrpi-status-board %}
+			  <div class="post_info">
+			    <li>
+			         <a href="{{ post.url }}">{{ post.title }}</a>
+			         <span>({{ post.date | date_to_long_string }})</span>
+			    </li>
+			    </div>
+			  {% endfor %}
+			</ul>
+
+			<h4>Tabz</h4>
+			Google Chrome extension to help manage tabs when you have a lot open.
+			<ul class="posts">
+			{% for post in site.tags.tabz %}
+			  <div class="post_info">
+			    <li>
+			         <a href="{{ post.url }}">{{ post.title }}</a>
+			         <span>({{ post.date | date_to_long_string }})</span>
+			    </li>
+			    </div>
+			  {% endfor %}
+			</ul>
 
 		</div>
 

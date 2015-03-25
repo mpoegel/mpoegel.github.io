@@ -1,8 +1,12 @@
 ---
-title: HackRPI Status Board
+title: HackRPI Status Board Update 1
 layout: project_post
-permalink: projects/status_board.html
+permalink: projects/status_board_1.html
 category: project
+tag: hackrpi-status-board
+
+prevpost: /projects/status_board_0.html
+nextpost:
 
 hackathon:
 hackathon_link:
@@ -10,11 +14,11 @@ repo: HackRPI-Status-Board
 version: 1.0.1
 team: 99% me
 status: Active
+update: 1
 description: Status Board built for HackRPI to track event commits, show event announcements, and provide a mentoring system.
 ---
 
-### January 17, 2015
-**Version 1.0.1**
+#### Summary of Updates:
 
 * Fixed future time-stamp bug
 * Began adding indexes for Mongo Databases
@@ -56,6 +60,3 @@ I also took a stab at some web design: it's a lengthy task that I did not have t
 In a first step at expanding the functionality of the application, I created custom login and registration pages (before I was using the default Meteor-provided ones). [Issue #10](https://github.com/mpoegel/HackRPI-Status-Board/issues/10) is an open issue to discuss the expansion of the account system. I have decided that I definitely want to have mentors register themselves and enter their own information and skills. While the participant accounts are still open to be discussed in the coming weeks, I made registrations forms for participants, mentors, and volunteers (because I thought why not? It could work).
 
 The next part that I'm itching to work on is a profile and settings page for the accounts, starting with the admin and mentors. I'm taking a break for now, however, awaiting feedback on the direction that this project is going. I'm happy at the progress I have been able to make over Winter Break.
-
-### November 15, 2014
-**Version 1.0.0**
