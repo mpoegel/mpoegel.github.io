@@ -6,7 +6,7 @@ category: project
 tag: hackrpi-status-board
 
 prevpost: /projects/status_board_0.html
-nextpost:
+nextpost: /projects/status_board_2.html
 
 hackathon:
 hackathon_link:
@@ -14,7 +14,6 @@ repo: HackRPI-Status-Board
 version: 1.0.1
 team: 99% me
 status: Active
-update: 1
 description: Status Board built for HackRPI to track event commits, show event announcements, and provide a mentoring system.
 ---
 
