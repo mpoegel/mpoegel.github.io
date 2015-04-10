@@ -32,12 +32,34 @@ I created three smaller datasets of sizes 10, 100, and 10,000. My initial greedy
 
 Averages of 3 runs using 900 elves
 
-| # Toys	| Time		 |
-|---------|----------|
-| 10 			|	0m0.077s |
-| 100 		| 0m0.310s |
-| 1,000		| 0m2.188s |
-| 5,000		|	0m9.279s |
-| 10,000	|	FAIL		 |
+<table class="table"
+        style="width:400px; font-size:14px;">
+<tr>
+  <th>Number of Toys</th>
+  <th>Average Time </th>
+</tr>
+<tbody>
+<tr>
+  <td>10</td>
+  <td>0m0.077s</td>
+</tr>
+<tr>
+  <td>100</td>
+  <td>0m0.310s</td>
+</tr>
+<tr>
+  <td>1,000</td>
+  <td>0m2.188s</td>
+</tr>
+<tr>
+  <td>5,000</td>
+  <td>0m9.279s</td>
+</tr>
+<tr>
+  <td>10,000</td>
+  <td>FAIL</td>
+</tr>
+</tbody>
+<table>
 
-The 10,000-toy test case starts to slow down immensely around the 5000 toy mark. I'm interested to see how much I can improve from these benchmarks.
+The 10,000-toy test case starts to slow down immensely around the 5000 toy mark. I'm interested to see how much I can improve from these benchmarks and what exactly is causing the 10,000 test case to break.
