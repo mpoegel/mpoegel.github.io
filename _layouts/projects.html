@@ -20,6 +20,19 @@
 			  {% endfor %}
 			</ul>
 
+			<h4>Kaggle</h4>
+			My rambling adventures on the riveting <a href="https://www.kaggle.com">Kaggle</a> Competitions in which I partake.
+			<ul class="posts">
+			{% for post in site.tags.kaggle %}
+			  <div class="post_info">
+			    <li>
+			         <a href="{{ post.url }}">{{ post.title }}</a>
+			         <span>({{ post.date | date_to_long_string }})</span>
+			    </li>
+			    </div>
+			  {% endfor %}
+			</ul>
+
 			<h4>Tabz</h4>
 			Google Chrome extension to help manage tabs when you have a lot open.
 			<ul class="posts">
