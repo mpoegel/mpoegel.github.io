@@ -12,5 +12,14 @@ start_time:
 end_time:
 hacking_time:
 hackathon_link:
-attendance: 
+attendance:
 ---
+
+<div style="text-align:center; padding:10px;">
+<a class="fancyBox" rel="" href="">
+<img src=""
+		alt=""
+		style="width:600px;"
+		title="" />
+</a>
+</div>

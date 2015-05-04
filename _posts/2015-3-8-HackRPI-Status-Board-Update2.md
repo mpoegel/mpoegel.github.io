@@ -34,10 +34,12 @@ The new design has the announcements permanently visible at the top of every pag
 I never really received much feedback from my peers about whether or not to implement a profile system, so I went ahead and did it anyway. I believe it's a great idea that can vastly improve the Status Board Experience (TM). So I began by adding hacker profiles. I've moved the process of adding a repository to the hacker profiles, so now a user must be logged in to a hacker account in order to add a repository. I have also added a framework to track teams, so multiple user accounts can be linked to the same repository. What I really would like to investigate is linking these hacker accounts to Github accounts and create web hooks on the repositories. This will significantly reduce the load on the server, remove the need for a private API key, and provide instant repository updates.
 
 <div style="text-align:center; padding:10px;">
+<a class="fancyBox" rel="hackrpi-status-board" href="/img/projects/hackrpi_status_board/hacker_dashboard.png">
 <img src="/img/projects/hackrpi_status_board/hacker_dashboard.png"
 		alt="Hacker Profile Dashboard"
 		style="width:600px;"
 		title="The new hacker profile dashboard" />
+</a>
 </div>
 
 However, this will require significant work on the back-end. I believe I have to create an API to receive POST requests from Github and register the Status Board application on Github. There also exists a Meteor Github Accounts package that would probably also be a good idea to incorporate. That would allow hackers to sign in to the Status Board using their Github username and password.

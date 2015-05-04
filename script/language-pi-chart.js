@@ -21,7 +21,7 @@ var svg = d3.select(".pi-chart").append("svg")
   .append("g")
     .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
 
-d3.csv("assets/lang_stats.csv", function(error, data) {
+d3.csv("/assets/lang_stats.csv", function(error, data) {
   var nameToIndex = {},
       count = 0,
       totalsize = 0;

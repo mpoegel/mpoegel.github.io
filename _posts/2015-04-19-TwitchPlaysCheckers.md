@@ -22,10 +22,12 @@ Twitch Plays Checkers, or Twitch _Loses_ Checkers, is an AI written in Python th
 I was tasked with building the game rules and the checkers AI; Ariel, the interaction with Twitch; and Andrew, the drawing of the board. It turns out that I had almost forgotten how to play checkers and didn't realize that there were a lot of rules to consider when validating moves. After I thought I had the basic board mechanics in working order, I moved on to build the checkers AI that would play against Twitch. I thought about trying to implement a dominant strategy, but I didn't have enough time to do all of the reading. Thus, I was left with writing a [simple greedy algorithm](https://github.com/mpoegel/TwitchPlaysCheckers/blob/master/lib/ai.py) to find the best move given a board state. While I would have must preferred to write this algorithm in C++, I did learn a bit about "passing by value" in Python: since everything is passed by reference by default, I had to manually deep copy objects to pass them by value.
 
 <div style="text-align:center; padding:10px;">
+<a class="fancyBox" rel="twitch-plays-checkers"  href="/img/projects/twitch_plays_checkers/board_example.png">
 <img src="/img/projects/twitch_plays_checkers/board_example.png"
 		alt="Board Example"
 		style="width:400px;"
 		title="Example of the checkers board during a test game." />
+</a>
 </div>
 
 Andrew wrote the functions to draw the checkerboard and the pieces on the board using OpenCV. Instead of streaming video, Andrew decided to update a .png file with the new board state and stream the picture to Twitch. Ariel wrote the part to capture the Twitch chat, parse the valid commands, and make a move.
