@@ -38,11 +38,11 @@ This was a quite a simple fix: I introduced a `completed` flag to the documents 
 
 [**Pull Request #30**](https://github.com/mpoegel/HackRPI-Status-Board/pull/30)
 
-This was a pretty cool update that stemmed from [issue #18](https://github.com/mpoegel/HackRPI-Status-Board/issues/18), "Improve Reliability of the Mentor Request System." I never pinned down the exact cause of the instability of the mentor system, but for some reason, during the latter half of the HackRPI 2014, mentor requests stopped being automatically assigned to mentors. In effort to alleviate this issue, I decided to greatly simplify the entire Mentoring System.
+This was a pretty cool update that stemmed from [issue #18](https://github.com/mpoegel/HackRPI-Status-Board/issues/18), "Improve Reliability of the Mentor Request System." I never pinned down the exact cause of the instability of the mentor system, but for some reason, during the latter half of the HackRPI 2014, mentor requests stopped being automatically assigned to mentors. In an effort to alleviate this issue, I decided to greatly simplify the entire Mentoring System.
 
-First I removed the need for a separate `Mentors` collection. This also goes with [issue #10](https://github.com/mpoegel/HackRPI-Status-Board/issues/10) to expand the accounts system. Now Mentors only exists as a User with `roles = ['mentor']`. Furthermore, I greatly simplified the algorithm to assign mentor requests. I reduced the need for 5 different Mentor flags to determine if a mentor should be assigned a mentee down to 2 flags: `active` and `available`: the former is if the Mentor is ready to mentor and the latter is if the Mentor does not currently have an assignment. To help even more, all of the help tags are divided into three categories--languages, frameworks, and APIs--are set in the `settings.json` of the Status Board. Hackers can only select one tag and then the first available Mentor with that tag is assigned to help them.
+First I removed the need for a separate `Mentors` collection. This also goes with [issue #10](https://github.com/mpoegel/HackRPI-Status-Board/issues/10) to expand the accounts system. Now Mentors only exists as a User with `roles = ['mentor']`. Furthermore, I greatly simplified the algorithm to assign mentor requests. I reduced the need for 5 different Mentor flags to determine if a mentor should be assigned a mentee down to 2 flags: `active` and `available`; the former is if the Mentor is ready to mentor and the latter is if the Mentor does not currently have an assignment. To help even more, all of the help tags are divided into three categories--languages, frameworks, and APIs--are defined in the `settings.json` of the Status Board. Hackers can only select one tag and then the first available Mentor with that tag is assigned to help them.
 
-I also finished the Mentor user profiles. Here Mentors can edit their skills, view their current assignment (and either waive it or mark it complete), and see their mentoring history.
+I also finished the Mentor user profiles. Here, Mentors can edit their skills, view their current assignment (and either waive it or mark it complete), and see their mentoring history.
 
 <div style="text-align:center; padding:10px;">
 <a class="fancyBox" rel="hackrpi-status-board" href="/img/projects/hackrpi_status_board/mentor_profile.png">
@@ -53,7 +53,7 @@ I also finished the Mentor user profiles. Here Mentors can edit their skills, vi
 </a>
 </div>
 
-I know, the UI needs a bit (OK, a lot) of touching up, the underlying functionality works.
+I know, the UI needs a bit (OK, a lot) of touching up, but the underlying functionality works.
 
 [**Pull Request #32**](https://github.com/mpoegel/HackRPI-Status-Board/pull/32)
 
@@ -61,11 +61,11 @@ This one isn't all that interesting, but it is important. I finally got around t
 
 [**Pull Request #36**](https://github.com/mpoegel/HackRPI-Status-Board/pull/36)
 
-And now for the grand finale. Using what is by far my favorite Meteor Package to date, [Restivus](https://github.com/kahmali/meteor-restivus), _REST APIs for the Best of Us_, I created an API for the Status Board. It turns out, this was significantly easier than I thought. I created an endpoint at `api/CommitMessages` to receive requests to interact with the `CommitMessages` collection. Currently, the only endpoint I have setup is `POST` to `api/CommitMessages`, but will definitely expand this in the future.
+And now for the grand finale. Using what is by far my favorite Meteor Package to date, [Restivus](https://github.com/kahmali/meteor-restivus), _REST APIs for the Best of Us_, I created an API for the Status Board. It turns out, this was significantly easier than I thought. I created an endpoint at `api/CommitMessages` to receive requests to interact with the `CommitMessages` collection. Currently, the only endpoint I have setup is `POST` to `api/CommitMessages`, but I will definitely expand this in the future.
 
-Following the GitHub OAuth process was a bit tricky a times, especially as I test from `localhost:3000`. Shout out [ngrok](https://ngrok.com/) for being awesome at forwarding the localhost. To summarize, the process works as follows:
+Following the GitHub OAuth process was a bit tricky at times, especially as I test from `localhost:3000`. Shout out [ngrok](https://ngrok.com/) for being awesome at forwarding the localhost to internet. To summarize, the process works as follows:
 
-1. The Server constructs a redirect to GitHub using the Status Board's `clientId` and a random string `state` to protect against requests being made by a third party.
+1. The server constructs a redirect to GitHub using the Status Board's `clientId` and a random string `state` to protect against requests being made by a third party.
 ```javascript
 return 'https://github.com/login/oauth/authorize?'
     + 'client_id=' + Meteor.settings.github_clientId
@@ -97,7 +97,18 @@ var signPayload = function(payload) {
 };
 ```
 
-The last thing I did, which is unrelated to the API, is update the collection privileges because I noticed that they were essentially useless and left open many security holes. Of particular importance are the `CommitMessages` and `RepositoryList` collections because they have most interaction with the user. Thus, I have to make sure that the user can only do **exactly** what I want the user to be able to do, nothing more and nothing less. This is when I discovered the incredible usefulness of [Underscore.js](https://http://underscorejs.org/). Underscore.js allows for much cleaner code by providing a great number of utility functions for the built-in JavaScript Arrays and Objects:
+I also reexamined the data that I am collecting from incoming commit messages and reformatted the appearance of the commit messages that appear on the home page. I added links to the project homepage and commit diff, the repository description, and the dominant language. The `</>` changes color according to the language of the repository. Lastly, I completed the voting functionality for the commit messages.
+
+<div style="text-align:center; padding:10px;">
+<a class="fancyBox" rel="hackrpi-status-board" href="/img/projects/hackrpi_status_board/commit_message_post.png">
+<img src="/img/projects/hackrpi_status_board/commit_message_post.png"
+		alt="Commit Message Post"
+		style="width:600px;"
+		title="Example of the new format of the commit messages that appear on the home page." />
+</a>
+</div>
+
+The last thing I did, which is unrelated to the API, is update the collection privileges because I noticed that they were essentially useless and left open many security holes. Of particular importance are the `CommitMessages` and `RepositoryList` collections because they have most interaction with the user. Thus, I have to make sure that the user can only do **exactly** what I want the user to be able to do, nothing more and nothing less. This is when I discovered the incredible usefulness of [Underscore.js](https://http://underscorejs.org/). Underscore.js allows for much cleaner code by providing a great number of utility functions for built-in JavaScript Arrays and Objects:
 ```javascript
 // a user can only modify the repo doc that s/he is attached to
 if (user_doc.profile.repositoryId === doc._id) {
