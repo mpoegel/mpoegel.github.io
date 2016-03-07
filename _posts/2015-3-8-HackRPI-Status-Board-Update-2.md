@@ -37,7 +37,7 @@ I never really received much feedback from my peers about whether or not to impl
 <a class="fancyBox" rel="hackrpi-status-board" href="/img/projects/hackrpi_status_board/hacker_dashboard.png">
 <img src="/img/projects/hackrpi_status_board/hacker_dashboard.png"
 		alt="Hacker Profile Dashboard"
-		style="width:600px;"
+		style="width:100%;"
 		title="The new hacker profile dashboard" />
 </a>
 </div>

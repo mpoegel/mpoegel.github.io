@@ -1,6 +1,6 @@
 // create a pi chart of the language data for the home page
 
-var margin = {top: 20, bottom: 20, right: 20, left: 20},
+var margin = {top: 0, bottom: 20, right: 0, left: 0},
     width = 400 - margin.right - margin.left,
     height = 400 - margin.top - margin.bottom,
     radius = Math.min(width, height) / 2;

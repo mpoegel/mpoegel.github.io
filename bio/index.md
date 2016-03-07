@@ -12,6 +12,7 @@ My contact information can be found on my [resume](/assets/resume.pdf).
 ### Work Experience
 
 #### Software Engineering Intern
+
 <div class="row">
 <div class="col-xs-4" style="text-align:left">May 2015 - August 2015</div>
 <div class="col-xs-4" style="text-align:center">ViaSat</div>

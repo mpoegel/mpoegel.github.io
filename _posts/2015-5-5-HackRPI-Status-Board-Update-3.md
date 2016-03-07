@@ -48,7 +48,7 @@ I also finished the Mentor user profiles. Here, Mentors can edit their skills, v
 <a class="fancyBox" rel="hackrpi-status-board" href="/img/projects/hackrpi_status_board/mentor_profile.png">
 <img src="/img/projects/hackrpi_status_board/mentor_profile.png"
 		alt="Mentor Profile Dashboard"
-		style="width:600px;"
+		style="width:100%;"
 		title="The new mentor profile dashboard" />
 </a>
 </div>
@@ -103,7 +103,7 @@ I also reexamined the data that I am collecting from incoming commit messages an
 <a class="fancyBox" rel="hackrpi-status-board" href="/img/projects/hackrpi_status_board/commit_message_post.png">
 <img src="/img/projects/hackrpi_status_board/commit_message_post.png"
 		alt="Commit Message Post"
-		style="width:600px;"
+		style="width:100%;"
 		title="Example of the new format of the commit messages that appear on the home page." />
 </a>
 </div>
