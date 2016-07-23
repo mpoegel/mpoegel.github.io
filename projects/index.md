@@ -1,9 +1,7 @@
 ---
-title: Hello World
-layout: projects
+title: Projects
+layout: page
 ---
-
-## Hello, World!
 
 This is my projects page.
 

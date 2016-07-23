@@ -1,6 +1,6 @@
 ---
 title: I Love the Poorly Educated
-layout: project_post
+layout: post
 permalink: projects/2016_us_election_1
 category: project
 tag: kaggle

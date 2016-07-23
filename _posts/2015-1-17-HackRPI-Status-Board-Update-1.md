@@ -1,6 +1,6 @@
 ---
 title: HackRPI Status Board Update 1
-layout: project_post
+layout: post
 permalink: projects/status_board_1.html
 category: project
 tag: hackrpi-status-board

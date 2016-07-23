@@ -1,6 +1,6 @@
 ---
 title: Twitch Plays Checkers
-layout: project_post
+layout: post
 permalink: projects/twitch_plays_checkers.html
 category: project
 tag: twitchplayscheckers

@@ -1,9 +1,7 @@
 ---
-title: Hello World
-layout: default
+title: About
+layout: page
 ---
-
-## Hello, World!
 
 My name is Matt Poegel. I am a sophomore at Rensselaer Polytechnic Institute in Troy, NY as a dual Mathematics and Computer Science major. My current interests are focused on data analysis. I enjoy the cross between the mathematics, computer algorithms, and problem solving. Having some experience in this area has peaked my interest and driven me to explore as much as I can in my own time, outside of classes.
 

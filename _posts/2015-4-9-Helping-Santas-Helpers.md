@@ -1,6 +1,6 @@
 ---
 title: Helping Santa's Helpers
-layout: project_post
+layout: post
 permalink: projects/helping-santas-helpers.html
 category: project
 tag: kaggle

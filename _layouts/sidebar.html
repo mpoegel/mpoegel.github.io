@@ -1,0 +1,44 @@
+<h4>Blogs</h4>
+<ul>
+	<li><a href="/hackathons">Hackathons</a></li>
+	<li><a href="/projects">Side Projects</a></li>
+</ul>
+
+<h4>Recent Activity</h4>
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h4>Information</h4>
+<ul class="list-unstyled">
+	<li>
+	<a href="http://www.github.com/mpoegel">
+	<button type="button" class="btn btn-link btn-xs contact-btn">
+		<img src="/img/github_icon.png" class="contact-icon"/>Github
+	</button>
+	</a>
+	</li>
+	<li>
+	<a href="http://www.linkedin.com/pub/matthew-poegel/82/5b5/858">
+	<button type="button" class="btn btn-link btn-xs contact-btn">
+		<img src="/img/linkedin_icon.png" class="contact-icon"/>LinkedIn
+	</button>
+	</a>
+	</li>
+	<li>
+	<a href="https://twitter.com/KidFromCary">
+	<button type="button" class="btn btn-link btn-xs contact-btn">
+		<img src="/img/twitter_icon.png" class="contact-icon"/>Twitter
+	</button>
+	</a>
+	</li>
+	<li>
+	<a href="/assets/resume.pdf">
+	<button type="button" class="btn btn-link btn-xs contact-btn">
+		<span class=" glyphicon glyphicon-user"></span> Resume (Updated Feb. 2016)
+	</button>
+	</a>
+	</li>
+</ul>
