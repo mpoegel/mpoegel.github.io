@@ -7,7 +7,8 @@ author:
   url      : mpoegel.github.io
   facebook : https://www.facebook.com/matt.poegel
   twitter  : https://twitter.com/KidFromCary
-  github: https://github.com/mpoegel
+
+github: https://github.com/mpoegel
 
 paginate: 3
 paginate_path: "/page/:num"

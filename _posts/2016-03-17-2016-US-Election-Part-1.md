@@ -83,8 +83,9 @@ r = CorrelationCoeff(X,Y)
 print('r = ' + str(r))
 {% endhighlight %}
 
-    r = -0.545799193326
-    
+<pre class="output">
+r = -0.545799193326
+</pre>
 
 <div style="text-align:center; padding:10px;">
 <a class="fancyBox" rel="2016_us_election" href="/img/projects/2016_us_election/output_6_1.png">
@@ -107,8 +108,10 @@ r = CorrelationCoeff(X,Y)
 print('r = ' + str(r))
 {% endhighlight %}
 
-    r = -0.327623669208
-    
+<pre class="output">
+r = -0.327623669208
+</pre>
+
 <div style="text-align:center; padding:10px;">
 <a class="fancyBox" rel="2016_us_election" href="/img/projects/2016_us_election/output_8_1.png">
 <img src="/img/projects/2016_us_election/output_8_1.png"
@@ -150,17 +153,18 @@ for i in high_neg_correls_ind:
     print(r, '=>', col_name, ':', descrip)
 {% endhighlight %}
 
-    (0.40672375787172882, '=>', 'RHI225214', ':', 'Black or African American alone, percent, 2014')
-    (0.40730601678816586, '=>', 'RHI325214', ':', 'American Indian and Alaska Native alone, percent, 2014')
-    (0.42260601886587457, '=>', 'LFE305213', ':', 'Mean travel time to work (minutes), workers age 16+, 2009-2013')
-    (0.43286826102909864, '=>', 'RHI625214', ':', 'Two or More Races, percent, 2014')
-    (0.52447986169016847, '=>', 'PVY020213', ':', 'Persons below poverty level, percent, 2009-2013')
-    (-0.54579919332622884, '=>', 'EDU635213', ':', 'High school graduate or higher, percent of persons age 25+, 2009-2013')
-    (-0.53826096465961426, '=>', 'RHI825214', ':', 'White alone, not Hispanic or Latino, percent, 2014')
-    (-0.36983458926806523, '=>', 'INC110213', ':', 'Median household income, 2009-2013')
-    (-0.46410188934079311, '=>', 'RHI125214', ':', 'White alone, percent, 2014')
-    (-0.35483869853880573, '=>', 'INC910213', ':', 'Per capita money income in past 12 months (2013 dollars), 2009-2013')
-    
+<pre class="output">
+(0.40672375787172882, '=>', 'RHI225214', ':', 'Black or African American alone, percent, 2014')
+(0.40730601678816586, '=>', 'RHI325214', ':', 'American Indian and Alaska Native alone, percent, 2014')
+(0.42260601886587457, '=>', 'LFE305213', ':', 'Mean travel time to work (minutes), workers age 16+, 2009-2013')
+(0.43286826102909864, '=>', 'RHI625214', ':', 'Two or More Races, percent, 2014')
+(0.52447986169016847, '=>', 'PVY020213', ':', 'Persons below poverty level, percent, 2009-2013')
+(-0.54579919332622884, '=>', 'EDU635213', ':', 'High school graduate or higher, percent of persons age 25+, 2009-2013')
+(-0.53826096465961426, '=>', 'RHI825214', ':', 'White alone, not Hispanic or Latino, percent, 2014')
+(-0.36983458926806523, '=>', 'INC110213', ':', 'Median household income, 2009-2013')
+(-0.46410188934079311, '=>', 'RHI125214', ':', 'White alone, percent, 2014')
+(-0.35483869853880573, '=>', 'INC910213', ':', 'Per capita money income in past 12 months (2013 dollars), 2009-2013')
+</pre>
 
 It looks like Trump was right: he does have a reason to love the poorly educated. Also interestingly, counties with higher populations of white people were less likely to be a trump victory.
 
@@ -175,8 +179,9 @@ r = CorrelationCoeff(X,Y)
 print('r = ' + str(r))
 {% endhighlight %}
 
-    r = -0.53826096466
-    
+<pre class="output">
+r = -0.53826096466
+</pre>
 
 <div style="text-align:center; padding:10px;">
 <a class="fancyBox" rel="2016_us_election" href="/img/projects/2016_us_election/output_12_1.png">
@@ -196,8 +201,9 @@ r = CorrelationCoeff(X,Y)
 print('r = ' + str(r))
 {% endhighlight %}
 
-    r = 0.52447986169
-    
+<pre class="output">
+r = 0.52447986169
+</pre>
 
 <div style="text-align:center; padding:10px;">
 <a class="fancyBox" rel="2016_us_election" href="/img/projects/2016_us_election/output_13_1.png">

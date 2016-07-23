@@ -105,3 +105,13 @@
   .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
   .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 }
+
+.output {
+  max-width: 785px;
+  margin: auto;
+  overflow-x: auto;
+  margin: {
+    top: 0;
+    bottom: 25px;
+  };
+}

@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-My name is Matt Poegel. I am a sophomore at Rensselaer Polytechnic Institute in Troy, NY as a dual Mathematics and Computer Science major. My current interests are focused on data analysis. I enjoy the cross between the mathematics, computer algorithms, and problem solving. Having some experience in this area has peaked my interest and driven me to explore as much as I can in my own time, outside of classes.
+My name is Matt Poegel. I am a senior at Rensselaer Polytechnic Institute in Troy, NY as a dual Mathematics and Computer Science major. My current interests are focused on data analysis. I enjoy the cross between the mathematics, computer algorithms, and problem solving. Having some experience in this area has peaked my interest and driven me to explore as much as I can in my own time, outside of classes.
 
 My contact information can be found on my [resume](/assets/resume.pdf).
 
@@ -11,17 +11,19 @@ My contact information can be found on my [resume](/assets/resume.pdf).
 
 #### Software Engineering Intern
 
-<div class="row">
-<div class="col-xs-4" style="text-align:left">May 2015 - August 2015</div>
-<div class="col-xs-4" style="text-align:center">ViaSat</div>
-<div class="col-xs-4" style="text-align:right">Carlsbad, CA</div>
+<div class="_row">
+<div class="col-4" style="text-align:left">May 2015 - August 2015</div>
+<div class="col-4" style="text-align:center">ViaSat</div>
+<div class="col-4" style="text-align:right">Carlsbad, CA</div>
 </div>
 
+  - created a monitoring platform for a large, scalable internet application using open source libraries
+
 #### Software Intern
-<div class="row">
-<div class="col-xs-4" style="text-align:left">May 2014 - August 2014</div>
-<div class="col-xs-4" style="text-align:center">Jacobs</div>
-<div class="col-xs-4" style="text-align:right">Nashua, NH</div>
+<div class="_row">
+<div class="col-4" style="text-align:left">May 2014 - August 2014</div>
+<div class="col-4" style="text-align:center">Jacobs</div>
+<div class="col-4" style="text-align:right">Nashua, NH</div>
 </div>
 
   - executed and edited test procedures for components of navigation software for military aircraft
@@ -29,10 +31,10 @@ My contact information can be found on my [resume](/assets/resume.pdf).
   - worked with Team Foundation Server, Surround SCM, Test Track Pro, and Rational DOORS
 
 #### GIS Engineering Intern
-<div class="row">
-<div class="col-xs-4" style="text-align:left">June 2013 - August 2013</div>
-<div class="col-xs-4" style="text-align:center">Pennichuck Water Works</div>
-<div class="col-xs-4" style="text-align:right">Merrimack, NH</div>
+<div class="_row">
+<div class="col-4" style="text-align:left">June 2013 - August 2013</div>
+<div class="col-4" style="text-align:center">Pennichuck Water Works</div>
+<div class="col-4" style="text-align:right">Merrimack, NH</div>
 </div>
 
   - traveled to customer locations and collected GPS data for curb boxes, main valves, and fire hydrants in

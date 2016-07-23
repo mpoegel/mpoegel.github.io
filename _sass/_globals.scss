@@ -185,3 +185,13 @@ pre {
     padding-left: 0;
   }
 }
+
+._row {
+  display: -webkit-flex;
+  display: 	   -ms-flex;
+  display: 		     flex;
+}
+
+.col-4 {
+  flex-basis: 33%;
+}
