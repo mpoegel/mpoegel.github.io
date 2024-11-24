@@ -1,0 +1,6 @@
+baseURL = 'https://matt.poegel.dev'
+languageCode = 'en-us'
+title = 'matt.poegel.dev'
+
+[markup.goldmark.renderer]
+unsafe= true

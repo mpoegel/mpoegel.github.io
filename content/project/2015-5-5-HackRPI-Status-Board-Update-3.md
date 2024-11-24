@@ -66,17 +66,17 @@ And now for the grand finale. Using what is by far my favorite Meteor Package to
 Following the GitHub OAuth process was a bit tricky at times, especially as I test from `localhost:3000`. Shout out [ngrok](https://ngrok.com/) for being awesome at forwarding the localhost to internet. To summarize, the process works as follows:
 
 1. The server constructs a redirect to GitHub using the Status Board's `clientId` and a random string `state` to protect against requests being made by a third party.
-{% highlight JavaScript %}
+```javascript
 return 'https://github.com/login/oauth/authorize?'
     + 'client_id=' + Meteor.settings.github_clientId
 		+ '&redirect_uri=' + Meteor.settings.root_url + '/user'
 		+ '&scope=admin:repo_hook,admin:org_hook'
 		+ '&state=' + state;
 },
-{% endhighlight %}
+```
 2. GitHub will then redirect back to Status Board with a `code` and the same `state` variable encoded in the URL. The Status Board checks to make sure that the `state`s match and then uses the `code` to send a `POST` request to GitHub to ask for an access token in the name of the user.
 3. Once the access token is received, the server can then use the token to create a web hook on a repository with another `POST` request.
-{% highlight JavaScript %}
+```javascript
 data: {
 	'name': 'web',
 	'active': true,
@@ -87,15 +87,15 @@ data: {
 		'secret': Meteor.settings.secret_key
 	}
 }
-{% endhighlight %}
+```
 4. `POST` requests from GitHub are then received at `api/CommitMessages`. When the web hooks are created, the Status Board also sends GitHub a `secret_key` which GitHub uses to hash the payload of its `POST` requests. We verify that an incoming request came from GitHub by hashing the payload with the same `secret_key` and comparing hashes. If they match, we know the request came from GitHub, and we can allow access to the `CommitMessages` collection.
-{% highlight JavaScript %}
+```javascript
 var signPayload = function(payload) {
 	return 'sha1=' + crypto.createHmac('sha1', Meteor.settings.secret_key)
 		.update(payload)
 		.digest('hex')
 };
-{% endhighlight %}
+```
 
 I also reexamined the data that I am collecting from incoming commit messages and reformatted the appearance of the commit messages that appear on the home page. I added links to the project homepage and commit diff, the repository description, and the dominant language. The `</>` changes color according to the language of the repository. Lastly, I completed the voting functionality for the commit messages.
 
@@ -110,7 +110,7 @@ I also reexamined the data that I am collecting from incoming commit messages an
 
 The last thing I did, which is unrelated to the API, is update the collection privileges because I noticed that they were essentially useless and left open many security holes. Of particular importance are the `CommitMessages` and `RepositoryList` collections because they have most interaction with the user. Thus, I have to make sure that the user can only do **exactly** what I want the user to be able to do, nothing more and nothing less. This is when I discovered the incredible usefulness of [Underscore.js](https://http://underscorejs.org/). Underscore.js allows for much cleaner code by providing a great number of utility functions for built-in JavaScript Arrays and Objects:
 
-{% highlight JavaScript %}
+```javascript
 // a user can only modify the repo doc that s/he is attached to
 if (user_doc.profile.repositoryId === doc._id) {
 	// if the user if modifying the userIds/collab field, they may only edit
@@ -129,7 +129,7 @@ if (user_doc.profile.repositoryId === doc._id) {
 }
 else
 	return false;
-{% endhighlight %}
+```
 
 Hopefully there aren't any obvious bugs in the code above. Rewriting the permissions should allow me to me move more functions to the client side, improving performance and security!
 

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+table td {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+table tr td:nth-child(even) {
+    background-color: lightblue;
+}
+
+@media (width < 600px) {
+    body {
+        font-size: 1.2em;
+        width: 98%;
+        padding: 2px;
+    }
+}
+
+@media (width >=600px) {
+    body {
+        font-size: 1.0em;
+        width: 800px;
+        padding: 20px;
+    }
+}
