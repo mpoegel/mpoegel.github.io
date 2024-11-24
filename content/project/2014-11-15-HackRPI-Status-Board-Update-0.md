@@ -4,6 +4,7 @@ layout: post
 permalink: projects/status_board_0.html
 category: project
 tag: hackrpi-status-board
+date: 2014-11-15
 
 prevpost:
 nextpost: /projects/status_board_1.html

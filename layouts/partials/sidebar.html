@@ -1,0 +1,11 @@
+<div id="sidebar">
+    <h4>Recent Posts</h4>
+    <ul id="sidebar-list">
+        {{ range .Site.RegularPages.ByDate.Reverse.Limit 10 }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Date.Format "2 Jan 2006" }}</a>
+        </li>
+        {{ end }}
+    </ul>
+
+</div>

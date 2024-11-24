@@ -4,6 +4,7 @@ layout: post
 permalink: projects/helping-santas-helpers.html
 category: project
 tag: kaggle
+date: 2015-04-09
 
 prevpost:
 nextpost:

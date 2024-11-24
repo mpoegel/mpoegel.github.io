@@ -5,9 +5,10 @@
 {{ .Content }}
 
 <ul>
-    {{ range .Pages.ByTitle }}
+    {{ range .Pages.ByDate }}
     <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ .Date.Format "2 Jan 2006" }}
         <span class="tags">
             {{ range .Params.Tags }}
             <span>{{ . }}</span>

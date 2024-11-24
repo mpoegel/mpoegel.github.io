@@ -4,6 +4,7 @@ layout: post
 permalink: projects/comp_opt_proj
 category: project
 tag: data-science
+date: 2016-05-13
 
 hackathon:
 hackathon_link: 

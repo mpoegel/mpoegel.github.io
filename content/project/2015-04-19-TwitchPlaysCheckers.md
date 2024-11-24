@@ -4,6 +4,7 @@ layout: post
 permalink: projects/twitch_plays_checkers.html
 category: project
 tag: twitchplayscheckers
+date: 2015-04-19
 
 prevpost:
 nextpost:

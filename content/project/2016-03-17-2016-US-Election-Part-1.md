@@ -4,6 +4,7 @@ layout: post
 permalink: projects/2016_us_election_1
 category: project
 tag: kaggle
+date: 2016-03-17
 
 prevpost:
 nextpost:

@@ -1,0 +1,13 @@
+{{ partial "header.html" }}
+
+<h3>Tagged with '{{ .Title }}'</h3>
+
+<ul>
+    {{ range .Pages.ByTitle }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+
+{{ partial "footer.html" }}
