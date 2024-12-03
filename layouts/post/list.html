@@ -1,0 +1,20 @@
+{{ partial "header.html" }}
+
+<h3>{{ .Title }}</h3>
+
+{{ .Content }}
+
+<ul>
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{.Title}}</a> {{ .Date.Format "2 Jan 2006" }}
+        <span class="tags">
+            {{ range .Params.Tags }}
+            <span>{{ . }}</span>
+            {{ end }}
+        </span>
+    </li>
+    {{ end }}
+</ul>
+
+{{ partial "footer.html" }}
